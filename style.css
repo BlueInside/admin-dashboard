@@ -102,7 +102,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9%;
-  justify-items: center;
+  justify-items: start;
 }
 .announcement-title {
   justify-self: start;
@@ -119,4 +119,19 @@ main {
   display: grid;
   width: 400px;
   padding-left: 2%;
+}
+.trendings {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 45px;
+}
+.trending-title {
+  grid-column: 1/3;
+}
+.trending {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-left: 2%;
+  align-content: center;
 }
