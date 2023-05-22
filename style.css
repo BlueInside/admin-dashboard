@@ -98,3 +98,25 @@ main {
   align-self: center;
   justify-self: start;
 }
+.side-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9%;
+  justify-items: center;
+}
+.announcement-title {
+  justify-self: start;
+  align-self: center;
+}
+.announcements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  justify-items: center;
+}
+.announcement {
+  display: grid;
+  width: 400px;
+  padding-left: 2%;
+}
