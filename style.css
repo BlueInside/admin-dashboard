@@ -35,6 +35,10 @@ img {
   height: auto;
 }
 /* end of reset */
+div,
+section {
+  border: 1px solid red;
+}
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -54,6 +58,7 @@ aside {
 #sidebar-logo {
   font-weight: bold;
   font-size: 1.6rem;
+  align-self: center;
 }
 .sidebar-top > section,
 .sidebar-bottom > section {
