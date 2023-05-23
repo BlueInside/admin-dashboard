@@ -35,10 +35,10 @@ img {
   height: auto;
 }
 /* end of reset */
-div,
+/* div,
 section {
   border: 1px solid red;
-}
+} */
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -73,11 +73,12 @@ header {
 }
 
 main {
-  background-color: grey;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 .card {
+  border-left: 6px #ed7c12 solid;
+  border-radius: 9px;
   background-color: #f8fafc;
   display: grid;
 
@@ -87,6 +88,11 @@ main {
 }
 .card-icons {
   justify-self: end;
+  margin-right: 20px;
+}
+.card-title {
+  align-self: end;
+  padding-bottom: 2px;
 }
 .main-content {
   display: grid;
@@ -103,14 +109,13 @@ main {
   width: 95%;
 }
 .announcement-title {
-  justify-self: start;
-  align-self: center;
+  margin-top: 11px;
 }
 .announcements {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-
+  border-radius: 9px;
   justify-items: center;
 }
 .announcement {
@@ -118,12 +123,21 @@ main {
   height: 135px;
   padding: 2%;
 }
+.announcement:nth-of-type(1) {
+  border-radius: 25px 25px 0px 0px;
+}
+.announcement:nth-of-type(3) {
+  border-radius: 0px 0px 25px 25px;
+}
 .trendings {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 53px repeat(4, 70px);
+  grid-template-rows: 53px repeat(4, 78px);
+  margin-top: 17px;
 }
 .trending-title {
+  padding-top: 17px;
+  margin-top: -5px;
   grid-column: 1/3;
 }
 .trending {
@@ -133,6 +147,12 @@ main {
   grid-template-rows: 55px;
   padding: 2%;
   align-content: center;
+}
+.trending:nth-of-type(1) {
+  border-radius: 15px 15px 0px 0px;
+}
+.trending:nth-last-of-type(1) {
+  border-radius: 0px 0px 15px 15px;
 }
 .bg-white {
   background-color: #f8fafc;
