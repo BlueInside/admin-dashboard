@@ -146,6 +146,7 @@ main {
 }
 .main-content {
   display: grid;
+  margin-left: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 29px repeat(3, 1fr);
 }
