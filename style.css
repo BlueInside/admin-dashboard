@@ -157,7 +157,11 @@ main {
   margin-top: 5px;
 }
 .side-content {
-  width: 95%;
+  height: 98%;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 41px 1fr 1fr;
 }
 .announcement-title {
   margin-top: 11px;
@@ -171,8 +175,9 @@ main {
 }
 .announcement {
   display: grid;
-  height: 135px;
-  padding: 2%;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .announcement-content {
   border-bottom: 1px solid grey;
@@ -189,8 +194,7 @@ main {
 .trendings {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 53px repeat(4, 78px);
-  margin-top: 17px;
+  grid-template-rows: 49px repeat(4, 1fr);
 }
 .trending-title {
   padding-top: 17px;
