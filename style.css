@@ -81,10 +81,9 @@ main {
   border-radius: 9px;
   background-color: #f8fafc;
   display: grid;
-
   grid-template-columns: 1fr;
-
-  margin: 10px;
+  margin: 13px;
+  padding: 32px;
 }
 .card-icons {
   justify-self: end;
@@ -112,16 +111,22 @@ main {
   margin-top: 11px;
 }
 .announcements {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   border-radius: 9px;
-  justify-items: center;
+  justify-items: center; */
 }
 .announcement {
   display: grid;
   height: 135px;
   padding: 2%;
+}
+.announcement-content {
+  border-bottom: 1px solid grey;
+}
+.announcement:nth-last-of-type(1) p.announcement-content {
+  border-bottom: none;
 }
 .announcement:nth-of-type(1) {
   border-radius: 25px 25px 0px 0px;
